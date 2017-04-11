@@ -57,7 +57,7 @@ public class CameraTest{
     photographer.addPhoto("Portrait", 8);
     photographer.addPhoto("Cabbage", 2);
     photographer.addPhoto("Cat", 6);
-    assertEquals(37,photographer.numberOfPhotos());
+    assertEquals(4,photographer.numberOfPhotos());
   }
 
 }

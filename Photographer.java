@@ -3,7 +3,12 @@ import java.util.*;
 public class Photographer{
 
   public ArrayList<Printable> collection;
-  public HashMap<String, Integer> journal = new HashMap<String, Integer>();
+  public HashMap<String, Integer> journal;
+
+  public Photographer(){
+    this.collection = new ArrayList<Printable>();
+    this.journal = new HashMap<String, Integer>();
+  }
 
   public int cameraCount(){
     return collection.size();
@@ -36,12 +41,12 @@ public class Photographer{
     return null;
   }
 
-  public int addPhoto(String string, Integer integer){
+  public void addPhoto(String string, Integer integer){
     journal.put(string, integer);
   }
 
   public int numberOfPhotos(){
-    return journal.length();
+    return journal.size();
   }
 
 }
