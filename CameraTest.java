@@ -45,7 +45,14 @@ public class CameraTest{
   }
 
   @Test
-  public voice canAddAndCountPhotos(){
+  public void canPrintDetails(){
+    photographer.buy(digitalcamera);
+    photographer.buy(analogcamera);
+    assertEquals("Nikon 34T, Noise reduction filter, Hi-resolution Sony ILCE5100L, No noise reduciton, Lo-resolution",photographer.printFullDetails());
+  }
+
+  @Test
+  public void canAddAndCountPhotos(){
     photographer.addPhoto("Landscape", 9);
     photographer.addPhoto("Portrait", 8);
     photographer.addPhoto("Cabbage", 2);

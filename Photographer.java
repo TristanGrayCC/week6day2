@@ -3,12 +3,18 @@ import java.util.*;
 public class Photographer{
 
   public ArrayList<Printable> collection;
-  public static void main(String[] args){
-    HashMap<String, Integer> journal = new HashMap<String, Integer>();
-  }
+  public HashMap<String, Integer> journal = new HashMap<String, Integer>();
 
   public int cameraCount(){
     return collection.size();
+  }
+
+  public String printFullDetails(){
+    String details = "";
+    for(Printable printable : collection){
+      details += printable.printDetails();
+    }
+    return details;
   }
 
   public void buy(DigitalCamera digitalcamera){
@@ -30,7 +36,7 @@ public class Photographer{
     return null;
   }
 
-  public int addPhoto(String string>, Integer integer){
+  public int addPhoto(String string, Integer integer){
     journal.put(string, integer);
   }
 
