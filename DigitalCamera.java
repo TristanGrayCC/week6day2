@@ -4,10 +4,10 @@ public class DigitalCamera implements Printable {
   public String addOns;
   public String resolution;
 
-  public DigitalCamera(){
-    this.name = "Nikon 34T";
-    this.addOns = "Noise reduction filter";
-    this.resolution = "Hi-resolution";
+  public DigitalCamera(String name, String addOns, String resolution){
+    this.name = name;
+    this.addOns = addOns;
+    this.resolution = resolution;
   }
 
   public String printDetails(){

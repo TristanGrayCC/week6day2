@@ -9,8 +9,8 @@ public class CameraTest{
   @Before
   public void before() {
     photographer = new Photographer();
-    digitalcamera = new DigitalCamera();
-    analogcamera = new AnalogCamera();
+    digitalcamera = new DigitalCamera("Nikon 34T","Noise reduction filter","Hi-resolution");
+    analogcamera = new AnalogCamera("Sony ILCE5100L","No noise reduciton","Lo-resolution");
   }
 
   @Test

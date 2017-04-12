@@ -4,10 +4,10 @@ public class AnalogCamera implements Printable {
   public String addOns;
   public String resolution;
 
-  public AnalogCamera(){
-    this.name = "Sony ILCE5100L";
-    this.addOns = "No noise reduciton";
-    this.resolution = "Lo-resolution";
+  public AnalogCamera(String name, String addOns, String resolution){
+    this.name = name;
+    this.addOns = addOns;
+    this.resolution = resolution;
   }
 
   public String printDetails(){
