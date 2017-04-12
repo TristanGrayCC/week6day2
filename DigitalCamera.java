@@ -1,5 +1,16 @@
 public class DigitalCamera implements Printable {
+
+  public String name;
+  public String addOns;
+  public String resolution;
+
+  public DigitalCamera(){
+    this.name = "Nikon 34T";
+    this.addOns = "Noise reduction filter";
+    this.resolution = "Hi-resolution";
+  }
+
   public String printDetails(){
-    return "Nikon 34T, Noise reduction filter, Hi-resolution";
+    return name + ", " + addOns + ", " + resolution;
   };
 }
