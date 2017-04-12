@@ -17,7 +17,7 @@ public class Photographer{
   public String printFullDetails(){
     String details = "";
     for(Printable printable : collection){
-      details += printable.printDetails();
+      details += printable.printDetails() + ", ";
     }
     return details;
   }

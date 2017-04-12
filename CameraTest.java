@@ -48,7 +48,7 @@ public class CameraTest{
   public void canPrintDetails(){
     photographer.buy(digitalcamera);
     photographer.buy(analogcamera);
-    assertEquals("Nikon 34T, Noise reduction filter, Hi-resolutionSony ILCE5100L, No noise reduciton, Lo-resolution",photographer.printFullDetails());
+    assertEquals("Nikon 34T, Noise reduction filter, Hi-resolution, Sony ILCE5100L, No noise reduciton, Lo-resolution, ",photographer.printFullDetails());
   }
 
   @Test
